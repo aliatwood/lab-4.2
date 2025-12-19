@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="logo">
+        <img src="Bilder/logolkpg.png" alt="Linköpings kommun logotyp">
+    </a>
+        <nav>
+            <a href="index.html">Startsida</a>
+            <a href="vadärfärdtjänst.html">Information</a>
+            <a href="behöverduhjälp.html">Kontakt</a>            
+        </nav>
+    </header>
+    <main>
+        <a href="index.html" class="tillbaka">◀ Tillbaka</a>
+        <h1 class="rubrikboka">Färdtjänst - Linköpings Kommun</h1>
+        <form class="boka" action="bekräfta.html">
+            <section>
+                <h2>Boka resa</h2>
+
+                <label class="h3boka" for="fran">Från</label>
+                <input type="text" name="fran" id="fran" placeholder="Hemadress">
+
+                <label class="h3boka" for="till">Till</label>
+                <input type="text" name="till" id="till" placeholder="Destination">
+
+                <label class="h3boka" for="datum">Datum</label>
+                <input type="date" name="datum" id="datum">
+
+                <label class="h3boka" for="tid">Tid</label>
+                <input type="time" name="tid" id="tid">
+
+                <h3>Vill du boka en returresa?</h3>
+                <div>
+                    <input type="checkbox" name="retur" id="retur">
+                    <label for="retur">Ja, jag vill boka en returresa</label>
+                </div>
+
+                <div id="returinfo" class="hidden">
+                    <label class="h3boka" for="returDatum">Retur-datum</label>
+                    <input type="date" name="returDatum" id="returDatum" class="bokainput">
+
+                    <label class="h3boka" for="returTid">Retur-tid</label>
+                    <input type="time" name="returTid" id="returTid" class="bokainput">
+                </div>
+
+
+
+
+
+                <h3>Har du med ledsagare?</h3>
+                <div>
+                    <input type="radio" name="ledsagare" id="val11" value="ja">
+                    <label for="val11">Ja</label>
+                    <input type="radio" name="ledsagare" id="val22" value="nej">
+                    <label for="val22">Nej</label>
+                </div>
+
+                <h3>Hjälpmedel</h3>
+                <div>
+                    <input type="radio" name="hjalpmedel" id="val1" value="rullator">
+                    <label for="val1">Rullator</label>
+                    <input type="radio" name="hjalpmedel" id="val2" value="rullstol">
+                    <label for="val2">Rullstol</label>
+                    <input type="radio" name="hjalpmedel" id="val3" value="inget">
+                    <label for="val3">Inget Hjälpmedel</label>
+                </div>
+
+            </section>
+            <button class="buttonboka" type="submit">Nästa</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <p>Telefon: 09-123 456 78</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Återkommande resa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+    <a href="index.html" class="logo">
+        <img src="Bilder/logolkpg.png" alt="Linköpings kommun logotyp">
+    </a>
+        <nav>
+            <a href="index.html">Startsida</a>
+            <a href="vadärfärdtjänst.html">Information</a>
+            <a href="behöverduhjälp.html">Kontakt</a>            
+        </nav>
+    </header>
+    <main>
+        <h1 class="rubrikboka1">Färdtjänst - Linköpings kommun</h1>
+        <div class="aterkommanderesa">
+            <section>
+                <h2 class="aterkommanderesah2">Boka återkommande resa</h2>
+                <h3 class="aterkommanderesah3">Från</h3>
+                <input type="text" name="hemadress" class="aterkommanderesainput" placeholder="Hemadress">
+                <h3 class="aterkommanderesah3">Till</h3>
+                <input type="text" name="destination" class="aterkommanderesainput" placeholder="Destination">
+            </section>
+            <fieldset>
+                <legend>Välj dagar</legend>
+                <input type="checkbox" id="val111">
+                <label for="val111">Mån</label>
+
+                <input type="checkbox" id="val222">
+                <label for="val222">Tis</label>
+
+                <input type="checkbox" id="val333">
+                <label for="val333">Ons</label>
+
+                <input type="checkbox" id="val444">
+                <label for="val444">Tor</label>
+
+                <input type="checkbox" id="val555">
+                <label for="val555">Fre</label>
+
+                <input type="checkbox" id="val666">
+                <label for="val666">Lör</label>
+
+                <input type="checkbox" id="val777">
+                <label for="val777">Sön</label>
+            </fieldset>
+
+            <section>
+                <h3 class="aterkommandetid">Tid</h3>
+                <input type="time" name="tid" class="aterkommanderesainput">
+            </section>
+            <a href="minaresor.html" class="buttonbekrafta">Skapa återkommande resa</a>
+        </div>
+    </main>
+    <footer>
+        <p>Telefon: 09-123 456 78</p>
+    </footer>
+</body>
+</html>
