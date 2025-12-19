@@ -31,3 +31,26 @@ avbryt.addEventListener("click", () => {
         alert("Du har avbokat din resa");
     }
 });
+
+// Pausa knapp
+const pausa = document.querySelector(".buttonkommanderesa2pause");
+
+pausa.addEventListener("click", () => {
+    if (pausa.textContent === " ⏸️ Pausa") {
+        let ok = confirm("Vill du pausa resan?");
+        if (ok) {
+            pausa.textContent = " ▶️ Återuppta";
+            pausa.style.backgroundColor = "green";
+            alert("Resan är nu pausad!");
+        }
+    } else if (pausa.textContent === " ▶️ Återuppta") {
+        let nej = confirm("Vill du återuppta resan?");
+        if (nej) {
+            pausa.textContent = " ⏸️ Pausa";
+            pausa.style.backgroundColor = "#f0ad4e";
+            alert("Resan har återupptagits!");
+        }
+    }
+});
+
+
