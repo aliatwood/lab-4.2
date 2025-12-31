@@ -22,6 +22,14 @@ andraButton.forEach(button => {
     });
 });
 
+const andraButtonAterkommande = document.querySelectorAll(".buttonaterkommanderesa1edit");
+andraButtonAterkommande.forEach(button => {
+    button.addEventListener("click", () => {
+        window.location.href = "återkommande.html";
+    });
+});
+
+
 // Avbryta knapp
 const avbryt = document.querySelector(".buttonkommanderesa2cancel");
 avbryt.addEventListener("click", () => {

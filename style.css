@@ -155,10 +155,10 @@ footer a:hover{
     max-width: 90%;
     justify-self: center;
 }
-.buttonkommanderesa1edit{
+.buttonkommanderesa1edit, .buttonaterkommanderesa1edit{
     background-color: #1E73BE;
 }
-.buttonkommanderesa1edit:hover{
+.buttonkommanderesa1edit:hover, .buttonaterkommanderesa1edit:hover{
     background-color: #155a9c;
 }
 .buttonkommanderesa2cancel{
@@ -290,7 +290,7 @@ footer a:hover{
     gap: 2rem;
     padding: 1.5rem;
 }
-.buttonkommanderesa1edit, .buttonkommanderesa1cancel, .buttonkommanderesa1pause, .buttonkommanderesa2cancel, .buttonkommanderesa2pause{
+.buttonkommanderesa1edit, .buttonkommanderesa1cancel, .buttonkommanderesa1pause, .buttonaterkommanderesa1edit,  .buttonkommanderesa2cancel, .buttonkommanderesa2pause{
     text-align: center;
     padding: 10px 15px;
     border: none;
@@ -653,7 +653,8 @@ main {
     .buttonkommanderesa1edit, 
     .buttonkommanderesa1cancel, 
     .buttonkommanderesa1pause, 
-    .buttonkommanderesa2cancel, 
+    .buttonkommanderesa2cancel,
+    .buttonaterkommanderesa1edit 
     .buttonkommanderesa2pause {
         width: 100%;
         max-width: 300px;
