@@ -43,22 +43,27 @@ avbryt.addEventListener("click", () => {
 // Pausa knapp
 const pausa = document.querySelector(".buttonkommanderesa2pause");
 
-pausa.addEventListener("click", () => {
-    if (pausa.textContent === " ⏸️ Pausa") {
-        let ok = confirm("Vill du pausa resan?");
-        if (ok) {
-            pausa.textContent = " ▶️ Återuppta";
-            pausa.style.backgroundColor = "green";
-            alert("Resan är nu pausad!");
+if (pausa) {
+    pausa.addEventListener("click", () => {
+        // Använd trim() för att hantera extra spaces
+        const currentText = pausa.textContent.trim();
+        
+        if (currentText.includes("Pausa")) {
+            const ok = confirm("Vill du pausa resan?");
+            if (ok) {
+                pausa.innerHTML = '<span aria-hidden="true">▶️</span> Återuppta';
+                pausa.style.backgroundColor = "green";
+                alert("Resan är nu pausad!");
+            }
+        } else if (currentText.includes("Återuppta")) {
+            const nej = confirm("Vill du återuppta resan?");
+            if (nej) {
+                pausa.innerHTML = '<span aria-hidden="true">⏸️</span> Pausa';
+                pausa.style.backgroundColor = "#f0ad4e";
+                alert("Resan har återupptagits!");
+            }
         }
-    } else if (pausa.textContent === " ▶️ Återuppta") {
-        let nej = confirm("Vill du återuppta resan?");
-        if (nej) {
-            pausa.textContent = " ⏸️ Pausa";
-            pausa.style.backgroundColor = "#f0ad4e";
-            alert("Resan har återupptagits!");
-        }
-    }
-});
+    });
+}
 
 
