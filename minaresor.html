@@ -26,33 +26,61 @@
         </a>
     </nav>
     </header>
-    <main>
-        <h1 class="rubrikboka1">Färdtjänst - Linköpings kommun</h1>
-        <h2 class="minaresorh2">Mina resor</h2>
+<main>
+    <h1 class="rubrikboka1">Färdtjänst - Linköpings kommun</h1>
+    <h2 class="minaresorh2">Mina resor</h2>
 
-        <div class="Minaresor">
-            <section class="kommanderesa">
-                <h3 class="kommande">
-                    <span class="label">Kommande resa:</span>
-                    <span class="details">23 december 15:00 → Vårdcentralen</span>
-                </h3>
-            </section>
-            
-            <div class="återkommanderesa">
-                <button class="buttonkommanderesa1edit" aria-label="Ändra resa"> ✏️ Ändra</button>
-                <button class="buttonkommanderesa2cancel" aria-label="Avboka resa"> ❌ Avboka</button>
+    <div class="Minaresor">
+        <!-- Resa 1 -->
+        <section class="kommanderesa" aria-labelledby="resa1">
+            <h3 class="visually-hidden" id="resa1">Kommande enskild resa</h3>
+            <div class="res-info">
+                <p class="res-typ">Enskild resa</p>
+                <p class="res-detaljer">
+                    <strong>När:</strong> 18 januari 2026 kl. 15:00<br>
+                    <strong>Från:</strong> Hemadress, Storgatan 6<br>
+                    <strong>Till:</strong> Vårdcentralen Centrum
+                </p>
             </div>
-
-            <section class="kommanderesa">
-                <h3>Återkommande resa: <br> Mån-Fre 08:00 → Daglig verksamhet </h3>
-            </section>
-            <div class="återkommanderesa">
-                <button class="buttonaterkommanderesa1edit" aria-label="Ändra återkommande resa"> ✏️ Ändra</button>
-                <button class="buttonkommanderesa2pause" aria-label="Pausa resa"> ⏸️ Pausa</button>
-            </div>
+        </section>
+        
+        <div class="återkommanderesa" role="group" aria-label="Hantera enskild resa">
+            <button class="buttonkommanderesa1edit" aria-label="Ändra resa den 18 januari"> 
+                <span aria-hidden="true">✏️</span> Ändra
+            </button>
+            <button class="buttonkommanderesa2cancel" aria-label="Avboka resa den 18 januari"> 
+                <span aria-hidden="true">❌</span> Avboka
+            </button>
         </div>
-        <a href="boka.html" class="buttonbekrafta">Ny resa</a>
-    </main>
+
+        <!-- Resa 2 -->
+        <section class="kommanderesa" aria-labelledby="resa2">
+            <h3 class="visually-hidden" id="resa2">Återkommande resa</h3>
+            <div class="res-info">
+                <p class="res-typ">Återkommande resa</p>
+                <p class="res-detaljer">
+                    <strong>Schema:</strong> Måndag till fredag kl. 08:00<br>
+                    <strong>Från:</strong> Hemadress<br>
+                    <strong>Till:</strong> Daglig verksamhet, Ågatan 3<br>
+                    <strong>Gäller till:</strong> 30 juni 2026
+                </p>
+            </div>
+        </section>
+        
+        <div class="återkommanderesa" role="group" aria-label="Hantera återkommande resa">
+            <button class="buttonaterkommanderesa1edit" aria-label="Ändra återkommande resa"> 
+                <span aria-hidden="true">✏️</span> Ändra
+            </button>
+            <button class="buttonkommanderesa2pause" aria-label="Pausa återkommande resa"> 
+                <span aria-hidden="true">⏸️</span> Pausa
+            </button>
+        </div>
+    </div>
+    
+    <a href="boka.html" class="buttonbekrafta" aria-label="Boka en ny resa">
+        <span aria-hidden="true">➕</span> Boka ny resa
+    </a>
+</main>
     <script src="script.js"></script>
     <footer aria-label="Sidfot">
         <p>
