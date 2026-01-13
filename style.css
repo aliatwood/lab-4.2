@@ -432,6 +432,16 @@ h1.rubrik{
 h2.rubrik{
     margin-top: 2rem;
 }
+.checkboxes{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 2px;
+}
+.checkboxes label {
+    display: flex;
+    align-items: center;
+    gap: 2px; /* AVSTÅND mellan checkbox och text */
+}
 
 @media (max-width: 1023px) {
 .bokad, .boka section, .bekrafta, .aterkommanderesa fieldset {
@@ -738,6 +748,4 @@ main {
         font-size: 1rem;
         line-height: 1.6;
     }
-
 }
-
