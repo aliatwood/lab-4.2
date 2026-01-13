@@ -51,6 +51,7 @@ main{
     position: relative;
     margin-top: 7rem;
     flex: 1;
+    padding-bottom: 4rem;
 }
 main h1{
     text-align: center;
@@ -406,6 +407,9 @@ footer a:hover{
     margin-bottom: 1rem;               
 }
 .till{
+    text-decoration: none;
+}
+.till:hover{
     text-decoration: underline;
 }
 .redo{
@@ -580,6 +584,8 @@ main {
 
     nav a {
         padding: 0.3rem 0;
+        white-space: nowrap;
+        flex-shrink: 0;
     }
 
     main {
