@@ -395,6 +395,13 @@ footer a:hover{
     max-width: 35ch;
     margin: 0 auto 1.5rem auto;
 }
+.hjalp a{
+    color: inherit;
+    text-decoration: none;
+}
+.hjalp a:hover{
+    text-decoration: underline;
+}
 .hjalp h1, .hjalp h2 {
     margin-bottom: 1rem;               
 }

@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Din färdtjänstresa i Linköpings kommun är bokad. Du får en bekräftelse via e-post och kan återgå till startsidan.">
     <title>Bokad</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Bilder/logo.svg" type="image/svg+xml">
 </head>
 <body>
     <header>
-    <a href="index.html" class="logo">
-        <img src="Bilder/logolkpg.png" alt="Linköpings kommun logotyp">
-    </a>
-        <nav>
-            <a href="index.html">Startsida</a>
-            <a href="vadärfärdtjänst.html">Information</a>
-            <a href="behöverduhjälp.html">Kontakt</a>            
-        </nav>
+        <a href="index.html" class="logo" aria-label="Till startsidan">
+            <img src="Bilder/logolkpg.png" alt="Linköpings kommun logotyp">
+        </a>
+
+    <nav aria-label="Huvudmeny">
+        <a href="index.html" aria-current="page">
+            <span aria-hidden="true">▶</span> Startsida
+        </a>
+        <a href="vadärfärdtjänst.html">
+            <span aria-hidden="true">ℹ️</span> Information
+        </a>
+        <a href="behöverduhjälp.html">
+            <span aria-hidden="true">&#9993;</span> Kontakt
+        </a>
+    </nav>
     </header>
     <main>
         <a href="bekräfta.html" class="tillbaka">◀ Tillbaka</a>
@@ -30,9 +38,17 @@
             <a href="index.html" class="buttonbekrafta">Till startsidan</a>
         </div>
     </main>
-    <footer>
-        <p> &#9742; Telefon: 09-123 456 78</p>
-        <a href="tillgänglighetsredogörelse.html" class="till">Tillgänglighetsredogörelse</a>
+    <footer aria-label="Sidfot">
+        <p>
+            <a href="tel:+460912345678">
+                <span aria-hidden="true">&#9742;</span>
+                Telefon: 09-123 456 78
+            </a>
+        </p>
+
+        <a href="tillgänglighetsredogörelse.html" class="till">
+            Tillgänglighetsredogörelse
+        </a>
     </footer>
 </body>
 </html>
