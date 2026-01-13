@@ -26,6 +26,41 @@ header{
     left: 0;
     z-index: 1000;
 }
+.ingress {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 1.5rem auto 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.infobox {
+    background-color: #f8f9fa;
+    border-left: 4px solid #1E73BE;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    border-radius: 0 8px 8px 0;
+    text-align: left;
+}
+
+.infobox ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.infobox li {
+    margin-bottom: 0.5rem;
+}
+
+.action-text {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 2rem auto 1.5rem auto;
+    max-width: 600px;
+    font-weight: 600;
+}
 .tillbaka{
     position: absolute;
     top: 0.60rem;
@@ -764,5 +799,19 @@ main {
     .paragraf {
         font-size: 1rem;
         line-height: 1.6;
+    }
+    .ingress {
+        font-size: 1.1rem;
+        margin: 1rem auto 1.5rem auto;
+    }
+    
+    .infobox {
+        padding: 1rem;
+        margin: 1.5rem 1rem;
+    }
+    
+    .action-text {
+        font-size: 1.2rem;
+        margin: 1.5rem auto;
     }
 }
