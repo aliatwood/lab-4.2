@@ -1,3 +1,7 @@
+*:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
+}
 body{
     background-color: #ADD8E6;
     font-family: system-ui, sans-serif;
